@@ -1,9 +1,9 @@
 import {createBoardTemplate} from './components/board.js';
 import {createSiteFilterTemplate} from './components/filter.js';
 import {createLoadMoreButtonTemplate} from './components/load-more-button.js';
-import {createTaskEditTemplate} from './components/site-menu.js';
-import {createTaskTemplate} from './components/task-edit.js';
-import {createSiteMenuTemplate} from './components/task.js';
+import {createSiteMenuTemplate} from './components/site-menu.js';
+import {createTaskEditTemplate} from './components/task-edit.js';
+import {createTaskTemplate} from './components/task.js';
 
 const NUBMER_CREATE_TASK = 3;
 
@@ -25,7 +25,6 @@ renderHTMLElementTemplate(createTaskEditTemplate, boardTasksElement);
 for (let i = 0; i <= NUBMER_CREATE_TASK; i++) {
   renderHTMLElementTemplate(createTaskTemplate, boardTasksElement);
 }
-
 
 const boardElement = siteMainElement.querySelector(`.board`);
 renderHTMLElementTemplate(createLoadMoreButtonTemplate, boardElement);
